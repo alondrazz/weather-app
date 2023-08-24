@@ -7,4 +7,10 @@ I wanted to learn how to use Server-Side APIs and be more comfortable with it. I
 https://alondrazz.github.io/weather-app/
 
 ## Screenshot
+![Screenshot](<assets/Screenshot (25).png>)
 
+## Resources
+I mostly got help from my tutor, he helped me with getting the API and I also used google to help me with this as well. I will list down some links I used.
+https://home.openweathermap.org/api_keys
+
+https://sceendy.com/blog/2017/09-27-weather-widget-tutorial/
