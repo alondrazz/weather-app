@@ -121,15 +121,15 @@ function attachHistoryItemClickListeners() {
     });
 }
 
-// Attach click event listener to Search button
+// Attach click event listener to search button
 searchBtn.addEventListener("click", function() {
     searchWeather();
     updateSearchHistory(city);
-    displaySearchHistory();
     attachHistoryItemClickListeners(); // Attach listeners after the history is displayed
 });
 
-// Attach click event listener to History button
+// Attach click event listener to history button
+var historyButton = document.querySelector("#history-button");
 historyButton.addEventListener("click", function() {
     displaySearchHistory();
 });
