@@ -29,9 +29,8 @@ function searchWeather() {
             return response.json();
         })
         .then(function (data) {
-            forecastContainer.innerHTML = ""; // Clear previous forecast data
-
-            var forecastList = data.list; // Fetch forecastList here
+            forecastContainer.innerHTML = ""; 
+            var forecastList = data.list; 
 
             var tempImgBaseUrl = 'https://openweathermap.org/img/w/';
             var groupedForecasts = {};
@@ -115,7 +114,7 @@ function attachHistoryItemClickListeners() {
     historyItems.forEach(function(item) {
         item.addEventListener("click", function() {
             var cityName = this.textContent;
-            cityInput.value = cityName; // Set the input value to the clicked city
+            cityInput.value = cityName; 
             searchWeather();
         });
     });
@@ -125,7 +124,7 @@ function attachHistoryItemClickListeners() {
 searchBtn.addEventListener("click", function() {
     searchWeather();
     updateSearchHistory(city);
-    attachHistoryItemClickListeners(); // Attach listeners after the history is displayed
+    attachHistoryItemClickListeners();
 });
 
 // Attach click event listener to history button
@@ -134,5 +133,4 @@ historyButton.addEventListener("click", function() {
     displaySearchHistory();
 });
 
-// Display initial search history and attach listeners when the page loads
 attachHistoryItemClickListeners();
